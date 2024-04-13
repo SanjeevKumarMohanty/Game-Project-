@@ -28,7 +28,6 @@ const resetGame = () => {
 
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
-        // console.log("box was clicked");
         if (turnO) {
             box.innerText = "O";
             box.style.color = "green";
@@ -90,9 +89,6 @@ const checkWinner = () => {
         }
     }
 };
-            // else if (click == 9) {
-            //     msg.innerHTML = "Match is draw";
-            //     msg.classList.remove("hide");
 
 
 newGameBtn.addEventListener("click", resetGame);
